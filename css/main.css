@@ -43,10 +43,16 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin-left: 0;
 }
 
 .quote {
   color: #999;
+}
+
+ol {
+  padding-left: 0;
+  list-style-type: decimal;
 }
 
 @media only screen and (min-width: 25em) {
@@ -79,6 +85,11 @@ blockquote {
     margin: 0 0 1.4rem;
   }
 
+  blockquote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -91,6 +102,10 @@ blockquote {
     h1,
     p {
       margin: 0 0 1.5rem;
+    }
+
+    ol {
+      margin-left: -1em;
     }
 
 }
