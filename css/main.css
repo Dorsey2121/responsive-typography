@@ -18,6 +18,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 article {
   max-width: 43em;
   margin: auto;
@@ -50,7 +54,7 @@ blockquote {
   color: #999;
 }
 
-ol {
+article ol {
   padding-left: 0;
   list-style-type: decimal;
 }
@@ -63,7 +67,7 @@ ol {
   }
 
   h1,
-  p {
+  article p {
     margin: 0 0 1.3rem;
   }
 
@@ -81,7 +85,7 @@ ol {
   }
 
   h1,
-  p {
+  article p {
     margin: 0 0 1.4rem;
   }
 
@@ -100,11 +104,11 @@ ol {
     }
 
     h1,
-    p {
+    article p {
       margin: 0 0 1.5rem;
     }
 
-    ol {
+    article ol {
       margin-left: -1em;
     }
 
