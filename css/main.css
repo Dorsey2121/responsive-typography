@@ -10,7 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
+  font-family: "Crimson Text", serif;
+  line-height: 1rem;
   color: #222;
 }
 
@@ -24,11 +25,14 @@ body {
 
 article {
   max-width: 43em;
-  margin: auto;
+  margin: 1em;
+  line-height: 1.3rem;
 }
 
 article h1 {
   font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.8rem;
 }
 
 article header {
@@ -37,17 +41,25 @@ article header {
 
 article header p {
   font-style: italic;
+  margin-top: .3rem;
+  margin-bottom: 1.5em;
+}
+
+article p {
+  margin-bottom: 1.3rem;
 }
 
 article > p:last-child {
   border-bottom: 1px solid #999;
+  padding-bottom: 1.3rem;
 }
 
 blockquote {
   max-width: 24em;
   color: #555;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-left: 0;
+  margin-bottom: 2rem;
 }
 
 .quote {
@@ -55,8 +67,9 @@ blockquote {
 }
 
 article ol {
-  padding-left: 0;
+  padding-left: 1em;
   list-style-type: decimal;
+  margin-bottom: 1.3rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -71,8 +84,14 @@ article ol {
     margin: 0 0 1.3rem;
   }
 
+  header {
+    margin-bottom: 1rem;
+  }
+
   blockquote {
     margin-left: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
 }
@@ -81,15 +100,21 @@ article ol {
 
   html {
     font-size: 110%;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   h1,
   article p {
-    margin: 0 0 1.4rem;
+    margin: 0 0 1.5rem;
+  }
+
+  header {
+    margin-bottom: 1.5rem;
   }
 
   blockquote {
+    font-size: 110%;
+    line-height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -100,17 +125,39 @@ article ol {
 
   html {
     font-size: 120%;
-    line-height: 1.5;
+    line-height: 1.9;
+  }
+
+  header {
+    margin-bottom: 1.9rem;
   }
 
   h1,
   article p {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.9rem;
   }
+
+article {
+  margin-left: 5rem;
+}
+
+
+article header p {
+  font-style: italic;
+  margin-top: .8rem;
+  margin-bottom: 1.5em;
+}
+
 
   article ol {
     margin-left: -1em;
   }
+
+  blockquote {
+    font-size: 120%;
+    line-height: 1.9rem;
+
+
 
 }
 
